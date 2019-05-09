@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    
+    <div id="hero" class="hero bg-cover w-screen flex flex-col">
+    </div>
   </div>
 </template>
 
@@ -14,4 +15,11 @@ export default {
   @tailwind preflight;
   @tailwind components;
   @tailwind utilities;
+
+  #hero{
+    background-image: url("./assets/hero.jpeg");
+    height: 400px;
+    position: absolute;
+    z-index: -5;
+  }
 </style>
