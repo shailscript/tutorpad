@@ -50,7 +50,7 @@ export default {
   height: 400px;
   z-index: -2;
 }
-.nav {
+.text-color {
   color: white;
 }
 </style>

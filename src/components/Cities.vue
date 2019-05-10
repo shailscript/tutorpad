@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 flex flex-wrap">
+  <div class="m-3 flex flex-wrap justify-around">
     <city></city>
     <city></city>
     <city></city>
