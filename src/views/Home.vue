@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="hero-bg" class="hero bg-cover w-screen flex flex-col">
+    <div id="hero-bg" class="bg-cover w-screen flex flex-col">
     </div>
     <div id="hero" class="flex w-screen flex-col">
       <navbar></navbar>
