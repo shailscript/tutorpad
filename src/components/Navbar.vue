@@ -1,14 +1,14 @@
 <template>
-  <div class="nav flex justify-between p-5">
+  <div class="flex justify-between p-5">
     <div>
-      <font-awesome-icon icon="bars" size="2x"></font-awesome-icon>
+      <font-awesome-icon icon="bars" size="2x" class="text-color"></font-awesome-icon>
     </div>
-    <div class="logo">
-      <font-awesome-icon icon="chalkboard-teacher" size="2x"></font-awesome-icon>
-    </div>
-    <div>
-      <font-awesome-icon icon="user" size="2x"></font-awesome-icon>
-    </div>
+    <router-link to='/'>
+      <font-awesome-icon icon="chalkboard-teacher" size="2x" class="text-color"></font-awesome-icon>
+    </router-link>
+    <router-link to='/login'>
+      <font-awesome-icon icon="user" size="2x" class="text-color"></font-awesome-icon>
+    </router-link>
   </div>
 </template>
 
@@ -18,3 +18,9 @@ export default {
 }
 </script>
 
+<style scoped>
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
