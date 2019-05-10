@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Finder from './views/Finder.vue'
+import Home from '@/views/Home.vue'
+import Finder from '@/views/Finder.vue'
+import Login from '@/views/Login.vue'
 
 Vue.use(Router)
 
@@ -13,9 +14,18 @@ export default new Router({
       component: Home
     },
     {
-      path: '/finder',
-      name: 'Finder',
-      component: Finder
+      path: '/',
+      component: () => import('@/views/layouts/Guest.vue'),
+      children: [
+        {
+          path: 'finder',
+          component: Finder
+        },
+        {
+          path: 'login',
+          component: Login
+        }
+      ]
     },
   ]
 })
