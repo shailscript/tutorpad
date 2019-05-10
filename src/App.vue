@@ -18,6 +18,12 @@
         <p class="font-hairline font-serif px-5 text-4xl text-white">Your hunt for a tuition starts here.</p>
       </div>
     </div>
+    <div id="actionButton" class="flex justify-center mb-20">
+      <div class="-my-10 px-28 primary-gradient rounded-lg flex justify-center">
+        <p class="font-hairline text-white text-2xl my-auto pr-3">Try finder</p>
+        <font-awesome-icon icon="arrow-right" size="1x" :style="{color: 'white'}" class="my-auto"></font-awesome-icon>
+      </div>
+    </div>
   </div>
 </template>
 
