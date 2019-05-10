@@ -1,14 +1,26 @@
 <template>
-  <div class="py-2">
-    <div class="bg-blue-darkest w-32">
-      <p class="text-white">Ahmedabad</p>
-    </div>
+  <div class="py-2 flex flex-wrap">
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
+    <city></city>
   </div>
 </template>
 
 <script>
-export default {
+import City from '@/components/City.vue'
 
+export default {
+  name: 'Cities',
+  components: {
+    City
+  }
 }
 </script>
 
