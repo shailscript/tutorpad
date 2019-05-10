@@ -50,4 +50,10 @@ export default {
     height: 400px;
     z-index: -2;
   }
+  .nav {
+    color: white;
+  }
+  .primary-gradient{
+    background: linear-gradient(283.71deg, #292E49, #536976);
+  }
 </style>
