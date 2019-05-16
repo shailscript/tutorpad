@@ -11,6 +11,13 @@
         <span class="bg-blue-darker text-white text-xs rounded-full px-2 py-1 mr-1">Group</span>
        <span class="bg-blue-darker text-white text-xs rounded-full px-2 py-1 mr-1">English</span>
       </div>
+      <p class="hidden md:block pt-5 leading-normal font-serif font-hairline text-grey-darkest">
+        Subject: Physics, Chemistry, Mathematics, and English.
+      </p>
+      <p class="hidden lg:block pt-2 leading-loose font-serif font-hairline text-grey-darkest">
+        Description: Lorem ipsum is placeholder text commonly used in the graphic, print,
+        and publishing industries for previewing layouts and visual mockups.
+      </p>
     </div>
   </div>
 </template>
