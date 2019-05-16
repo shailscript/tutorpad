@@ -1,6 +1,6 @@
 <template>
-  <div class="min-h-full">
-    <navbar></navbar>
+  <div class="container mx-auto">
+    <navbar text-color = "text-black"></navbar>
     <router-view></router-view>
   </div>
 </template>
