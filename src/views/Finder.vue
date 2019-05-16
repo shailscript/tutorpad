@@ -1,8 +1,12 @@
 <template>
   <div class="min-h-screen flex flex-col justify-between">
     <div>
-      <h2 class="py-2 px-3 font-serif font-hairline text-3xl">Finder</h2>
-      <p class="px-3 py-2 font-sans font-thin text-lg text-grey-dark">Select your preference from the options below, so we can assist you better</p>
+      <div class="my-5">
+        <h2 class="mx-3 p-2 font-serif font-hairline text-3xl">Finder</h2>
+        <p class="mx-3 p-2 font-sans font-thin text-lg text-grey-dark">
+          Select your preference from the options below, so we can assist you better
+        </p>
+      </div>
       <cities></cities>
     </div>
     <div class="sticky pin-x pin-b bg-grey-light p-4 flex justify-around">
