@@ -3,7 +3,7 @@
     <div id="hero-bg" class="bg-cover w-screen flex flex-col">
     </div>
     <div id="hero" class="flex w-screen flex-col">
-      <navbar></navbar>
+      <navbar text-color="text-white"></navbar>
       <div class="w-3/4 my-auto">
         <p class="font-hairline font-serif px-5 text-4xl text-white">Your hunt for a tuition starts here.</p>
       </div>
