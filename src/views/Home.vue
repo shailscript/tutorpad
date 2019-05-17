@@ -21,6 +21,7 @@
         <TuitionCard/>
       </div>
     </div>
+    <app-footer/>
   </div>
 </template>
 
@@ -28,13 +29,15 @@
 import Navbar from '@/components/Navbar.vue'
 import ActionButton from '@/components/ActionButton.vue'
 import TuitionCard from '@/components/TuitionCard.vue'
+import AppFooter from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
   components: {
     Navbar,
     ActionButton,
-    TuitionCard
+    TuitionCard,
+    AppFooter
   }
 }
 </script>
