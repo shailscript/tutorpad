@@ -82,6 +82,15 @@ export default {
         },
       ];
     },
+
+    atFirstStep() {
+      return this.selected === 0;
+    },
+
+    atLastStep() {
+      return this.selected === this.steps.length - 1;
+    },
+
     selectedStep() {
       return this.steps[this.selected];
     },
@@ -90,14 +99,17 @@ export default {
     goPrevStep() {
       this.selected = this.selected - 1;
     },
+
     goNextStep() {
       this.selected = this.selected + 1;
     },
+
     updateKeySelected(key) {
       return (selected) => {
         this[key].selected = selected;
       };
     },
+
     completeFinder() {
       console.log('Finder Complete');
     },
