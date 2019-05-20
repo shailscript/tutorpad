@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Finder, //for testing
+      component: Finder,
     },
     {
       path: '/finder',
