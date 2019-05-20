@@ -4,7 +4,30 @@
       <div class="container mx-auto px-4">
         <app-action-bar title="Finder">
           <div class="-mx-1">
-            Buttons
+            <app-button
+              class="mx-1"
+              v-if="!atFirstStep"
+              @click.native="goPrevStep"
+            >
+              <i class="fas fa-arrow-left"></i> <span class="hidden sm:inline p-2">Prev</span>
+            </app-button>
+
+            <app-button
+              class="mx-1"
+              v-if="!atLastStep"
+              @click.native="goNextStep"
+            >
+              <span class="hidden sm:inline p-2">Next</span> <i class="fas fa-arrow-right"></i>
+            </app-button>
+
+            <app-button
+              class="mx-1"
+              v-if="atLastStep"
+              @click.native="completeFinder"
+            >
+              <span class="hidden sm:inline p-2">Done</span> <i class="fas fa-check"></i>
+            </app-button>
+          </div>
         </app-action-bar>
       </div>
     </div>
