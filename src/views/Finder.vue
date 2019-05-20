@@ -36,6 +36,8 @@
       <component
         :is="selectedStep.component"
         :class="selectedStep.className"
+        v-bind="selectedStep.props"
+        v-on="selectedStep.listeners"
       />
     </div>
   </div>
@@ -43,11 +45,14 @@
 
 <script>
 import AppActionBar from '../components/AppActionBar.vue';
+import AppButton from '../components/AppButton.vue';
 import FinderIntroduction from '../components/FinderIntroduction.vue';
+import FinderGroup from '../components/FinderGroup.vue';
 export default {
   name: 'Finder',
   components: {
     FinderIntroduction,
+    AppButton,
     AppActionBar,
   },
   data() {
@@ -80,17 +85,15 @@ export default {
           component: FinderIntroduction,
           className: 'h-full max-w-sm mx-auto',
         },
+        ...['cities', 'boards'].map(this.generateStep),
       ];
     },
-
     atFirstStep() {
       return this.selected === 0;
     },
-
     atLastStep() {
       return this.selected === this.steps.length - 1;
     },
-
     selectedStep() {
       return this.steps[this.selected];
     },
@@ -99,19 +102,30 @@ export default {
     goPrevStep() {
       this.selected = this.selected - 1;
     },
-
     goNextStep() {
       this.selected = this.selected + 1;
     },
-
     updateKeySelected(key) {
       return (selected) => {
         this[key].selected = selected;
       };
     },
-
     completeFinder() {
       console.log('Finder Complete');
+    },
+    generateStep(key) {
+      return {
+        component: FinderGroup,
+        className: 'container mx-auto py-8 px-4',
+        props: {
+          title: this[key].title,
+          selected: this[key].selected,
+          items: this[key].items,
+        },
+        listeners: {
+          update: this.updateKeySelected(key),
+        },
+      };
     },
   },
 };
