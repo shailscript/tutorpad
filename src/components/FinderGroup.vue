@@ -10,6 +10,9 @@
       >
         <finder-group-item
           :item="item"
+          :is-active="selected.includes(i)"
+          @select="handleSelect(i)"
+          @deselect="handleDeselect(i)"
         />
       </div>
     </div>
@@ -31,6 +34,18 @@ export default {
     items: {
       type: Array,
       required: true,
+    },
+    selected: {
+      type: Array,
+      required: true,
+    },
+  },
+  methods: {
+    handleSelect(index) {
+      this.$emit('update', [...this.selected, index]);
+    },
+    handleDeselect(index) {
+      this.$emit('update', this.selected.filter(i => i !== index));
     },
   },
 };
