@@ -3,7 +3,7 @@
     <h3 class="mb-4">What's this?</h3>
 
     <p class="mb-8 text-center font-medium sm:text-lg leading-normal">
-      Select your preference from the options below, so we can assist you better. Click Next.
+      Select your preference from the options ahead, so we can assist you better. Click Next.
     </p>
 
     <img

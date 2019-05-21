@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="h-screen w-screen overflow-hidden flex flex-col">
-      <div class="text-center p-4">
+      <div class="text-center p-4 bg-blue-darkest">
         <span class="inline-block bg-grey-light w-12 h-12 rounded">
           <!-- Logo -->
         </span>
