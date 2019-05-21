@@ -3,11 +3,16 @@
     <div class="h-screen w-screen overflow-hidden flex flex-col">
       <div class="text-center p-4 bg-blue-darkest">
         <div class="container mx-auto flex justify-between items-center">
-          <div class="inline-block bg-grey-light w-12 h-12 rounded">
+          <div
+            class="inline-block bg-grey-light w-12 h-12 rounded"
+            @click="$router.push('/')"
+          >
             <!-- Logo -->
           </div>
 
-          <i class="fas fa-university text-4xl text-white"></i>
+          <div @click="$router.push('tuitions')">
+            <i class="fas fa-university text-4xl text-white"></i>
+          </div>
 
           <i class="fas fa-user text-2xl text-white"></i>
         </div>
