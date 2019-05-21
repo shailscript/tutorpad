@@ -2,12 +2,14 @@
   <div class="h-full w-full flex flex-col overflow-scroll">
     <div>
       <div class="hero bg-cover w-screen flex items-center">
+        <div class="container mx-auto">
         <h2
-          class="text-white font-hairline antialiased text-3xl pl-5 w-3/4"
+          class="text-white font-hairline antialiased text-4xl pl-5 w-3/4"
           :style="{ textShadow: '0px 0px 10px rgb(10,10,10)' }"
         >
           Your hunt for a tuition starts here.
         </h2>
+      </div>
       </div>
 
       <div
