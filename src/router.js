@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import Finder from './views/Finder.vue';
-import Tuitions from './views/Tuitions.vue';
+import Home from '@/views/Home.vue';
+import Finder from '@/views/Finder.vue';
+import Tuitions from '@/views/Tuitions.vue';
 
 Vue.use(Router);
 
