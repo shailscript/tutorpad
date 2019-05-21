@@ -2,9 +2,15 @@
   <div id="app">
     <div class="h-screen w-screen overflow-hidden flex flex-col">
       <div class="text-center p-4 bg-blue-darkest">
-        <span class="inline-block bg-grey-light w-12 h-12 rounded">
-          <!-- Logo -->
-        </span>
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="inline-block bg-grey-light w-12 h-12 rounded">
+            <!-- Logo -->
+          </div>
+
+          <i class="fas fa-university text-4xl text-white"></i>
+
+          <i class="fas fa-user text-2xl text-white"></i>
+        </div>
       </div>
 
       <div class="flex-1 overflow-hidden">
