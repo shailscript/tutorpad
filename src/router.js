@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Finder from './views/Finder.vue';
+import Tuitions from './views/Tuitions.vue';
 
 Vue.use(Router);
 
@@ -14,10 +15,17 @@ export default new Router({
       name: 'home',
       component: Home,
     },
+
     {
       path: '/finder',
       name: 'finder',
       component: Finder,
+    },
+
+    {
+      path: '/tuitions',
+      name: 'tuitions',
+      component: Tuitions,
     },
   ],
 });
