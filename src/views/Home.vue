@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full w-full flex flex-col overflow-scroll">
+  <div class="h-full w-full flex flex-col overflow-y-scroll">
     <div>
       <div class="hero bg-cover w-screen flex items-center">
         <div class="container mx-auto">

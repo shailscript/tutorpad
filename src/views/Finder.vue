@@ -48,6 +48,7 @@ import AppActionBar from '../components/AppActionBar.vue';
 import AppButton from '../components/AppButton.vue';
 import FinderIntroduction from '../components/FinderIntroduction.vue';
 import FinderGroup from '../components/FinderGroup.vue';
+
 export default {
   name: 'Finder',
   components: {
