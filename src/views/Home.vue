@@ -25,7 +25,7 @@
 
     <div class="my-20 container mx-auto">
       <div v-for='n in 5' :key="n">
-        <TuitionCard></TuitionCard>
+        <tuition-card></tuition-card>
       </div>
     </div>
   </div>
