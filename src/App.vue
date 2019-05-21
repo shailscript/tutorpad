@@ -14,7 +14,9 @@
             <i class="fas fa-university text-4xl text-white"></i>
           </div>
 
-          <i class="fas fa-user text-2xl text-white"></i>
+          <div @click="$router.push('login')">
+            <i class="fas fa-user text-2xl text-white"></i>
+          </div>
         </div>
       </div>
 
