@@ -5,7 +5,7 @@
         <app-action-bar title='Login'></app-action-bar>
       </div>
     </div>
-    <div class="h-full container mx-auto -mt-20">
+    <div class="h-full max-w-sm mx-auto -mt-20">
       <div class="h-full flex flex-col justify-center">
         <label
           class="m-2 text-grey-darker font-hairline text-xl"
@@ -38,6 +38,15 @@
         >
           Login
         </button>
+        <p class="my-2 mx-auto text-grey-darker font-hairline text-xl">
+          Don't have an account yet?
+          <router-link
+            class="text-blue-dark no-underline px-1"
+            to="register">
+            Register
+          </router-link>
+          now.
+        </p>
       </div>
     </div>
   </div>
