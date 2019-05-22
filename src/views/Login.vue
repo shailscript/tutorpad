@@ -1,7 +1,7 @@
 <template>
   <div class="h-full w-full">
-    <div class="py-2 sm:bg-grey-lighter">
-      <div class="container mx-auto px-4">
+    <div class="py-2 px-4 sm:bg-grey-lighter">
+      <div class="container mx-auto">
         <app-action-bar title='Login'></app-action-bar>
       </div>
     </div>
