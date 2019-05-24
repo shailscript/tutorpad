@@ -1,10 +1,7 @@
 <template>
   <div class="h-full w-full">
-    <div class="py-2 px-4 sm:bg-grey-lighter">
-      <div class="container mx-auto">
-        <app-action-bar title='Login'></app-action-bar>
-      </div>
-    </div>
+    <app-action-bar title='Login'></app-action-bar>
+
     <div class="h-full max-w-sm mx-auto -mt-20">
       <div class="h-full flex flex-col justify-center">
         <label
