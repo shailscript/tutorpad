@@ -3,6 +3,9 @@ node_modules
 /dist
 src/assets/*.jpeg
 src/assets/*.png
+
+package-lock.json
+
 # local env files
 .env.local
 .env.*.local
